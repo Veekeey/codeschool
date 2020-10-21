@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>an atm machine</title>
+</head>
+<body>
+    <script type="text/javascript">
+        //properties          behaivour//
+        //location             transfer//
+        //thumb print          balance//
+        //currency             paybill//
+        //keypad               deposit//
+        //screen layout        dispense
+
+        class ATM {
+            constructor(accountBalance, sound, location, bank, thumbPrint, currency, keyPad, screenLayout) {
+                this.accountBalance = accountBalance;
+                this.sound = sound;
+                this.location = location;
+                this.bank=bank;
+                this.thumbPrint = thumbPrint;
+                this.currency = currency;
+                this.keyPad = keyPad
+                this.screenLayout = screenLayout;
+            }
+
+             deposit(amount){
+                 this.accountBalance = this.accountBalance + amount;
+            }
+
+            balance(){
+                return this.accountBalance;
+            }
+
+            withdraw(amount){
+               return this.accountBalance = this.accountBalance - amount;
+            }
+            //method
+            dispense(pin, amount){
+                if(pin && pin == 1234){return this.withdraw (amount);}
+                else{return "please enter your pin"}
+                }
+        }
+            let victor = new ATM(20000, true, "Barnawa", "GTB", true, 500, "square", "horizontal" );
+             //console.log(victor.dispense(1234, 4000));
+             console.log(victor.dispense(1234, 15000));
+    </script>
+</body>
+</html>

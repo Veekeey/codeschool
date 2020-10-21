@@ -1,0 +1,18 @@
+<html>
+<head>
+  <title>array methods</title>
+</head>
+<body>
+<button onclick="myFunction()">add</button>
+<p id="demo"></p>
+  <script type="text/javascript">
+var food =["rice", "beans", "yam", "spaghetti", "noodles"];
+document.getElementById('demo').innerHTML = food;
+
+function myFunction(){
+  let deletedfood = food.splice(2, 1);
+  document.getElementById("demo").innerHTML = food;
+}
+  </script>
+</body>
+</html>

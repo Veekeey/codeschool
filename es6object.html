@@ -1,0 +1,41 @@
+<html>
+<head>
+  <title>ES6 OBJECT</title>
+</head>
+<body>
+  <script type="text/javascript">
+
+  class ATM{
+    constructor(buttons, screen, cardReciever, shape,color){
+      this.buttons;
+      this.screen;
+      this.cardReciever;
+      this.shape;
+      this.color
+    }
+  }
+    let total = 10000;
+    let cash;
+    
+    function insertCard(){
+      console.log('Card inserted');
+    }
+    function insertDetails(){
+      console.log('PIN: 2222');
+    }
+    function dispense(cash) {
+      console.log('Withdraw ' + cash);
+      console.log('Take your cash.')
+      let balance = (total-cash);
+      console.log('Your balance is ' + balance);
+    }
+    
+    let ATM1 = (20, 1, 1, 'square', 'silver');
+    insertCard();
+    insertDetails();
+    dispense(3000);
+    
+
+  </script>
+</body>
+</html>

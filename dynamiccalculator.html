@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>DYNAMIC CALCULATOR</title>
+</head>
+<body style="background-color:re; padding-top: 150px;">
+  <center>
+    <input type="text" placeholder="Enter Number" style="height: 40px;" id="type1"/>
+    <select name="dropbox" id="drop">
+    <option value="select" selected> select</option>
+      <option value="add">+</option>
+      <option value="divide">/</option>
+      <option value="multiply">*</option>
+      <option value="subtract">-</option>
+      <option value="modulus">%</option>
+    </select>
+    <input type="text" placeholder="Enter Number" style= "height: 40px;" id="type2"/>
+    <br>
+    <br>
+    <br>
+    <button style="width: 200px; height: 48px; background-color:black; color: blanchedalmond;" onclick="compute()">COMPUTE</button>
+  </center>
+  <script type="text/javascript">
+      //function to to handle the addition
+      //creation phase
+      function compute(){
+        var value1 = document.getElementById("type1").value;
+        var value2 = document.getElementById("type2").value;
+        var dropVal = document.getElementById('drop').value;
+        var total;
+
+        switch (dropVal) {
+          case 'add':
+            total = Number(value1) + Number(value2);
+            alert(total);
+            break;
+
+          case 'subtract':
+            total = Number(value1) - Number(value2);
+            alert(total);
+            break;
+
+          case 'divide':
+            total = Number(value1) / Number(value2);
+            alert(total);
+            break;
+
+          case 'multiply':
+            total = Number(value1) * Number(value2);
+            alert(total);
+            break;
+
+          case 'modulus':
+            total = Number(value1) % Number(value2);
+            alert(total);
+            break;
+        }
+      }
+  </script>
+</body>
+</html>

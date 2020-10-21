@@ -1,0 +1,44 @@
+<html>
+<head>
+  <title>slidder app</title>
+</head>
+
+<body style="background-color: palevioletred; padding-top: 80px;">
+  <center>
+<div style="background-color: pink;">
+  <br>
+  <img src="images/ejura.jpeg" id="thumbnails" width="70px;" height="80px;">
+  <img src="images/meliga.jpeg" id="thumbnails" width="70px;" height="80px;">
+  <img src="images/tifara.jpeg" id="thumbnails" width="70px;" height="80px;">
+  <img src="images/whiston.jpeg" id="thumbnails" width="70px;" height="80px;">
+  <hr>
+  <img src= "images/victoria.jpeg" id="main" onmouseover="stop()" width="70px;" height="80px;" onmouseout="slider()">
+</div>
+</center>
+
+
+<script type="text/javascript">
+//an array to hold all images
+  var images = [
+    "images/victoria.jpeg",
+    "images/ejura.jpeg",
+    "images/meliga.jpeg",
+    "images/tifara.jpeg",
+    "images/whiston.jpeg"
+]
+
+var counter = 0;
+function slider(){
+  document.getElementById("main").setAttribute("src", images[counter]);
+  counter++;
+  if (counter >=images.length){
+  counter = 0;
+   }
+}
+var interval = setInterval(slider,3000);
+function stop(){
+  clearInterval(interval);
+}
+  </script>
+</body>
+</html>

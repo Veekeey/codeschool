@@ -1,0 +1,24 @@
+<html>
+<head>
+  
+  <title>GALLERY APP</title>
+</head>
+<body>
+  <center>
+  <img onClick="galleryApp(this)" src="images/ejura.jpeg" width="250px" height="250px">
+  <img onClick="galleryApp(this)" src="images/meliga.jpeg" width="250px" height="250px">
+  <img  onClick="galleryApp(this)" src="images/tifara.jpeg" width="250px" height="250px">
+  <img  onClick="galleryApp(this)" src="images/victoria.jpeg" width="250px" height="250px">
+  <img  onClick="galleryApp(this)" src="images/whiston.jpeg" width="250px" height="250px">
+  <hr>
+  <img src="images/ejura.jpeg" id="fulldisplay" width="400px" height="250px">
+</center>
+  <script type="text/javascript">
+
+    function galleryApp(elem){
+      document.getElementById("fulldisplay").src = elem.src;
+    }
+
+  </script>
+</body>
+</html>

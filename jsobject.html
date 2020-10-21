@@ -1,0 +1,135 @@
+<html>
+<head>
+  <title>JS OBJECT</title>
+</head>
+<body>
+
+  <script type="text/javascript">
+      function car (color, shape, tyres, brand, model, type, windshield, door, 
+      seat, sideMirror, headLight, steering, wipers, trunk, bonnet){
+      this.color = color,
+      this.shape = shape,
+      this.tyres = tyres,
+      this.brand = brand,
+      this.model = model,
+      this.type = type,
+      this.windshield = windshield,
+      this.door = door,
+      this.seat = seat,
+      this.sideMirror = sideMirror,
+      this.headLight = headLight,
+      this.steering = steering,
+      this.wipers = wipers,
+      this.trunk = trunk,
+      this.bonnet = bonnet
+    }
+ car.prototype.forward = function(){
+    console.log(this.brand + ' is moving forward....... ');
+}
+
+car.prototype.backward = function(){
+    console.log(this.brand + ' moves backward. ');
+}
+car.prototype.park = function(){
+    console.log(this.model + ' is parked in the garrage.');
+}
+car.prototype.horn = function(){
+    console.log(this.brand + ' has ' + this.headLight + ' headlight');
+}
+car.prototype.jerk = function(){
+    console.log(this.brand + 'is jerking. ');
+} 
+car.prototype.ignite = function(){
+    console.log(this.brand + ' has ignited.');
+}
+car.prototype.rotate = function(){
+    console.log(this.brand + ' rotates....... ');
+}
+car.prototype.load = function(){
+    console.log(this.brand + ' carries load.');
+} 
+car.prototype.speed = function(){
+    console.log(this.brand + ' moves on a high speed..');
+}
+car.prototype.swipe = function(){
+    console.log(this.wipers  + ' is functional.. ');
+}  
+car.prototype.shift = function(){
+    console.log(this.tyres + ' has an ability to shift.');
+}
+//instantiate
+var car1 = new car('blue', 'octagon', 4, 'toyota', 'camry2020', 'SUV', 2, 2, 2, 2, 2, 1, 1, 2, 1);
+var car2 = new car('red', 'decagon', 6, 'honda', 'accord', 'sports' , 2, 2, 2, 2, 2, 1, 2, 2, 1);
+var car3 = new car('blue', 'hectagon', 7, 'ford', 'explorer', 'SUV', 2, 2, 2, 2, 2, 1, 2, 2, 1);
+var car4 = new car('blue', 'hexagon', 8, 'mercedes-benz', 'E350', 'sedan', 2, 2, 2, 2, 2, 1, 2, 2, 1);
+var car5 = new car('blue', 'pentagon', 5, 'audi', 'audiQ3 2018', 'SUV', 2, 2, 2, 2, 2, 1, 2, 2, 1);
+
+car1.forward();
+car2.forward();
+car3.forward();
+car4.forward();
+car5.forward();
+
+car1.backward();
+car2.backward();
+car3.backward();
+car4.backward();
+car5.backward();
+
+car1.horn();
+car2.horn();
+car3.horn();
+car4.horn();
+car5.horn();
+
+car1.park();
+car2.park();
+car3.park();
+car4.park();
+car5.park();
+
+car1.jerk();
+car2.jerk();
+car3.jerk();
+car4.jerk();
+car5.jerk();
+
+car1.ignite();
+car2.ignite();
+car3.ignite();
+car4.ignite();
+car5.ignite();
+
+car1.rotate();
+car2.rotate();
+car3.rotate();
+car4.rotate();
+car5.rotate();
+
+car1.load();
+car2.load();
+car3.load();
+car4.load();
+car5.load();
+
+car1.speed();
+car2.speed();
+car3.speed();
+car4.speed();
+car5.speed();
+
+car1.swipe();
+car2.swipe();
+car3.swipe();
+car4.swipe();
+car5.swipe();
+
+car1.shift();
+car2.shift();
+car3.shift();
+car4.shift();
+car5.shift();
+
+  </script>
+</body>
+</html>
